@@ -5,16 +5,15 @@ body {
 
 .hero-banner {
   height: 100%;
-  background-image: url("./hero-banner.jpeg");
+  background-image: url("./hero-banner.avif");
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
-  background-size: contain;
 }
 
 .hero-banner .weather-block {
-  background-color: #254f65;
+  background-color: #24333b;
   min-width: 800px;
   min-height: 600px;
   opacity: 0.85;
@@ -44,25 +43,39 @@ body {
   justify-content: center;
   color: #fff;
   font-size: small;
-  margin: 1rem;
+  margin: 1rem 1rem 0 1rem;
 }
 
 .search-textfield {
-  width: 75%;
+  width: 81%;
   margin-right: 0.75rem;
 }
 
-.search-textfield input {
+.search-textfield input[type="text"] {
   width: 100%;
   border: none;
   border-radius: 1.75rem;
   background: #4d5c67;
   height: 2.5rem;
   padding: 12px;
+  appearance: none; /* Remove default styles (browser-specific) */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-.search-textfield input:focus {
-  border-color: none;
+.search-textfield input[type="text"]:hover {
+  border-color: #888;
+}
+
+.search-textfield input[type="text"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-textfield input[type="text"]::placeholder {
+  color: #aaa;
+  font-style: italic;
 }
 
 .search-button button {
@@ -90,7 +103,7 @@ body {
 }
 
 .mb-0 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .font-bold {
@@ -122,13 +135,13 @@ body {
 }
 
 .mini-box p {
-    color: #fff;
+  color: #fff;
 }
 
 .color-white {
-    color: #fff;
+  color: #fff;
 }
 
 .color-gray {
-    color: rgb(177, 175, 175)
+  color: rgb(177, 175, 175);
 }

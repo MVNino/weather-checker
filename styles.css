@@ -55,6 +55,8 @@ body {
   width: 100%;
   border: none;
   border-radius: 1.75rem;
+  color: #fff;
+  font-size: 16px;
   background: #4d5c67;
   height: 2.5rem;
   padding: 12px;
@@ -69,7 +71,7 @@ body {
 }
 
 .search-textfield input[type="text"]:focus {
-  border-color: #007bff;
+  border-color: #0c243d;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
@@ -80,6 +82,7 @@ body {
 
 .search-button button {
   border: none;
+  font-size: 16px;
   border-radius: 1.75rem;
   height: 2.5rem;
   padding: 12px;

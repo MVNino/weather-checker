@@ -20,6 +20,7 @@ body {
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .color-primary {
@@ -100,9 +101,15 @@ body {
 }
 
 .search-result div {
-  margin-left: 10rem !important;
   text-align: center;
   margin: 0;
+}
+
+.search-content-icon {
+  margin-left: 3rem !important;
+  margin-right: 1rem !important;
+  display: flex;
+  align-items: center;
 }
 
 .mb-0 {
@@ -147,4 +154,9 @@ body {
 
 .color-gray {
   color: rgb(177, 175, 175);
+}
+
+.weather-icon {
+  margin: 5px;
+  font-size: 1.5em;
 }
